@@ -1,8 +1,8 @@
 /* eslint-disable */
-require('./arrow')
-require('./check')
-require('./clock')
-require('./colorwheel')
-require('./mask')
-require('./sora')
-require('./vue')
+import './arrow'
+import './check'
+import './clock'
+import './colorwheel'
+import './mask'
+import './sora'
+import './vue'

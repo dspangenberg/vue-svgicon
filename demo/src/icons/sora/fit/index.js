@@ -1,3 +1,3 @@
 /* eslint-disable */
-require('./arrow')
-require('./mask')
+import './arrow'
+import './mask'

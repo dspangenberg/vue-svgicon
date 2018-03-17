@@ -11,6 +11,7 @@ const path = require('path')
 const Svgo = require('svgo')
 const glob = require('glob')
 const colors = require('colors')
+const {kebabCase} = require('lodash')
 const args = require('yargs')
   .usage('Usage: $0 -s svgSourcePath -t targetPath')
   .demandOption(['s', 't'])
@@ -140,7 +141,7 @@ glob(sourcePath, function (err, files) {
   files = files.map((f) => path.normalize(f))
 
   files.forEach((filename, ix) => {
-    let name = path.basename(filename).split('.')[0]
+    let name = kebabCase(path.basename(filename).split('.')[0])
     let content = fs.readFileSync(filename, 'utf-8')
     let filePath = getFilePath(filename)
 

@@ -1,5 +1,5 @@
 /* eslint-disable */
-var icon = require('vue-svgicon')
+import * as icon from 'vue-svgicon'
 icon.register({
   'clock': {
     width: 16,
