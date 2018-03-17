@@ -61,6 +61,9 @@ let svgo = new Svgo({
       removeDesc: true
     },
     {
+      removeAttrs: '(stroke|fill|style)'
+    },
+    {
       removeUselessDefs: true
     },
     {
