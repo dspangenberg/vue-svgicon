@@ -108,7 +108,7 @@ function generateIndex(files, subDir = '') {
   let dirMap = {}
 
   files.forEach((file) => {
-    let name = path.basename(file).split('.')[0]
+    let name = kebabCase(path.basename(file).split('.')[0])
     let filePath = getFilePath(file, subDir)
     let dir = filePath.split('/')[0]
 
